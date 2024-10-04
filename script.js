@@ -136,6 +136,9 @@ let allCharacters = document.getElementById("allCharacters");
 allCharacters.addEventListener("click", () => {
   let firstBlock = document.getElementById("firstBlock");
   firstBlock.style.display = "flex";
+  firstBlock.scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
 //Getting the containers
@@ -204,6 +207,10 @@ studentsButton.addEventListener("click", () => {
   workers.style.display = "none";
   house.style.display = "none";
 
+  students.scrollIntoView({
+    behavior: "smooth",
+  });
+
   addingCardsByStatus("student");
 });
 
@@ -215,6 +222,10 @@ workersButton.addEventListener("click", () => {
   workers.style.display = "flex";
   house.style.display = "none";
 
+  workers.scrollIntoView({
+    behavior: "smooth",
+  });
+
   addingCardsByStatus("worker");
 });
 
@@ -225,6 +236,10 @@ houseButton.addEventListener("click", () => {
   students.style.display = "none";
   workers.style.display = "none";
   house.style.display = "flex";
+
+  house.scrollIntoView({
+    behavior: "smooth",
+  });
 
   gryffindor.classList.add("active");
   addingCardsByHouse("Gryffindor");

@@ -1,0 +1,370 @@
+:root {
+  --yellow-color: rgb(249, 181, 12);
+}
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #1d1d1d;
+}
+
+.main {
+  background: linear-gradient(0, #1d1d1d 10%, rgba(29, 29, 29, 0) 58.99%),
+    url("./public/main-image.png");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-top: 170px;
+  padding-bottom: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.main-btn {
+  background-color: var(--yellow-color);
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-family: "Bluu Next Cyrillic";
+  font-weight: 700;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-btn:hover {
+  font-size: 20px;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+  box-shadow: 4px 4px 14px rgba(249, 181, 12, 0.3),
+    -4px -4px 14px rgba(249, 181, 12, 0.3);
+}
+
+/* first container */
+.first-block {
+  margin: 0 auto;
+  display: none;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn-first-block {
+  background: transparent;
+  border: 1px solid var(--yellow-color);
+  cursor: pointer;
+  border-radius: 100px;
+  color: var(--yellow-color);
+  font-size: 18px;
+  font-family: "Bluu Next Cyrillic";
+}
+.btn-first-block:hover {
+  font-size: 20px;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+  box-shadow: 4px 4px 14px rgba(249, 181, 12, 0.3),
+    -4px -4px 14px rgba(249, 181, 12, 0.3);
+}
+
+/* second container - students*/
+.students,
+.workers,
+.characters {
+  margin: 0 auto;
+  display: none;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.card {
+  color: var(--yellow-color);
+  font-family: sans-serif;
+  position: relative;
+  height: 410px;
+  width: 254px;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background: linear-gradient(
+    0deg,
+    #0f0f0f 0%,
+    rgba(15, 15, 15, 0.74) 35%,
+    rgba(15, 15, 15, 0) 60%
+  );
+  border-radius: 20px;
+}
+
+.card:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    0deg,
+    #0f0f0f 0%,
+    rgba(15, 15, 15, 0.74) 45%,
+    rgba(15, 15, 15, 0) 75%
+  );
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+  box-shadow: 4px 4px 14px rgba(249, 181, 12, 0.5),
+    -4px -4px 14px rgba(249, 181, 12, 0.5);
+}
+
+h4 {
+  font-size: 26px;
+  font-weight: 500;
+  color: white;
+  margin: 5px 0;
+}
+p {
+  margin: 3px 0;
+  font-size: 16px;
+  font-weight: 400;
+}
+.student-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.card button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin-top: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.card button:hover {
+  color: var(--yellow-color);
+  gap: 20px;
+  transition-timing-function: linear;
+  transition-duration: 300ms;
+}
+
+/* third container "Characters" */
+ul {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  justify-content: space-between;
+  border: 1px solid white;
+  border-radius: 100px;
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0 10px;
+}
+.filter {
+  text-align: center;
+  height: 100%;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-family: "Bluu Next Cyrillic";
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.filter:hover {
+  color: var(--yellow-color);
+}
+.active {
+  background-color: var(--yellow-color);
+  border-radius: 100px;
+  color: #0f0f0f;
+}
+.active:hover {
+  color: #0f0f0f;
+}
+
+@media screen and (min-width: 320px) {
+  h2,
+  h3 {
+    margin: 0;
+    padding: 0;
+    color: var(--yellow-color);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 0 10px;
+  }
+  .main-btn {
+    width: 200px;
+    height: 48px;
+  }
+  .main-btn:hover {
+    width: 208px;
+  }
+  .first-block {
+    width: 310px;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+  .item img {
+    width: 290px;
+  }
+  .btn-first-block {
+    width: 298px;
+    height: 48px;
+    font-weight: 700;
+  }
+  .btn-first-block:hover {
+    width: 306px;
+  }
+  .students,
+  .workers,
+  .characters {
+    width: 310px;
+    gap: 30px;
+    padding-top: 30px;
+  }
+  ul {
+    height: 50px;
+  }
+  .filter p {
+    display: none;
+  }
+  .filter {
+    padding: 10px 20px;
+  }
+  .filter img {
+    width: 26px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .first-block {
+    width: 760px;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .item img {
+    width: 230px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .btn-first-block {
+    width: 180px;
+    height: 60px;
+    font-weight: 400;
+  }
+  .btn-first-block:hover {
+    width: 188px;
+  }
+  .students,
+  .workers,
+  .characters {
+    width: 760px;
+  }
+  ul {
+    height: 60px;
+  }
+  .filter p {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h2,
+  h3 {
+    font-size: 60px;
+  }
+  .main-btn {
+    width: 300px;
+    height: 60px;
+  }
+  .main-btn:hover {
+    width: 308px;
+  }
+  .first-block {
+    width: 1020px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .item img {
+    width: 320px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .btn-first-block {
+    width: 220px;
+    height: 54px;
+    font-weight: 700;
+  }
+  .btn-first-block:hover {
+    width: 228px;
+  }
+  .students,
+  .workers,
+  .characters {
+    width: 1020px;
+  }
+  .filter {
+    padding: 10px 40px;
+  }
+  .filter img {
+    width: 26px;
+    height: auto;
+  }
+}
+@media screen and (min-width: 1440px) {
+  h2,
+  h3 {
+    font-size: 80px;
+  }
+  .first-block {
+    width: 1240px;
+    padding-bottom: 100px;
+  }
+  .item img {
+    width: 400px;
+  }
+  .btn-first-block {
+    width: 300px;
+    height: 60px;
+    font-weight: 700;
+  }
+  .btn-first-block:hover {
+    width: 308px;
+  }
+  .students,
+  .workers,
+  .characters {
+    width: 1240px;
+    gap: 70px;
+  }
+  .filter {
+    padding: 10px 75px;
+  }
+}

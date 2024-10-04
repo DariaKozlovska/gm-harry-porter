@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Porter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="main" id="main">
+      <h2>
+        Welcome to <br />
+        Harry Porter's world
+      </h2>
+      <button class="main-btn" id="allCharacters">Show all characters</button>
+    </main>
+    <!-- shown after click "Show all characters" -->
+    <container class="first-block" id="firstBlock">
+      <div class="item">
+        <img src="./public/students.png" alt="Students" />
+        <button class="btn-first-block" id="studentsButton">
+          Hogwarts's students
+        </button>
+      </div>
+      <div class="item">
+        <img src="./public/workres.png" alt="Workers" />
+        <button class="btn-first-block" id="workersButton">
+          Hogwarts's workers
+        </button>
+      </div>
+      <div class="item">
+        <img src="./public/herous.png" alt="Characters" />
+        <button class="btn-first-block" id="houseButton">
+          Characters in special house
+        </button>
+      </div>
+    </container>
+    <!-- Shown after click "Hogwards's students" -->
+    <container class="students" id="students">
+      <h3>Hogwarts's students</h3>
+      <div class="cards" id="student-cards"></div>
+    </container>
+    <!-- Shown after click "Hogrwards's workers"-->
+    <container class="workers" id="workers">
+      <h3>Hogwarts's workers</h3>
+      <div class="cards" id="worker-cards"></div>
+    </container>
+    <!-- Shown after click "Characters in special house"-->
+    <container class="characters" id="house">
+      <h3>
+        Characters <br />
+        in special house
+      </h3>
+      <ul>
+        <li>
+          <button class="filter" id="gryffindor">
+            <img src="public/gryffindor.png" alt="gryffindor-logo" />
+            <p>Gryffindor</p>
+          </button>
+        </li>
+        <li>
+          <button class="filter" id="slytherin">
+            <img src="public/slytherin.png" alt="slytherin-logo" />
+            <p>Slytherin</p>
+          </button>
+        </li>
+        <li>
+          <button class="filter" id="ravenclaw">
+            <img src="public/ravenclaw.png" alt="ravenclaw-logo" />
+            <p>Ravenclaw</p>
+          </button>
+        </li>
+        <li>
+          <button class="filter" id="hufflepuff">
+            <img src="public/hufflepuff.png" alt="hufflepuff-logo" />
+            <p>Hufflepuff</p>
+          </button>
+        </li>
+      </ul>
+      <div class="cards" id="house-cards"></div>
+    </container>
+
+    <script src="script.js"></script>
+  </body>
+</html>

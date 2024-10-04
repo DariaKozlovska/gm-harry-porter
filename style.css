@@ -219,6 +219,7 @@ ul {
   .main-btn {
     width: 200px;
     height: 48px;
+    color: #1d1d1d;
   }
   .main-btn:hover {
     width: 208px;
